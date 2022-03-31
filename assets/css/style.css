@@ -323,3 +323,65 @@ header {
 .section-projects--filters li.active {
   border-bottom: 3px solid #b28756;
 }
+
+.section-projects--photos {
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.section-projects--photo {
+  width: 280px;
+  display: flex;
+}
+
+.section-projects--photo--area {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photo--area img {
+  width: inherit;
+  height: inherit;
+}
+
+.section-projects--photo--info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+.section-projects--photo--info h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-projects--photo--area:hover .section-projects--photo--info {
+  display: flex;
+  cursor: pointer;
+}
+
+.button-bts {
+  display: block;
+  background-color: #b28756;
+  color: #fff;
+  text-align: center;
+  width: 190px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
