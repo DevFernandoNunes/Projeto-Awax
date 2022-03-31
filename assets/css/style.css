@@ -385,3 +385,25 @@ header {
   margin-top: 30px;
   border-radius: 20px;
 }
+
+.bg-team {
+  background-image: url("../image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+#sticky-footer {
+  background-color: #000000;
+  color: #ccc;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#sticky-footer small {
+  font-size: 15px;
+}
