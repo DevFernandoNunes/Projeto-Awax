@@ -18,7 +18,7 @@ body {
 /* 4. Section-aboutus
 /* 5. Section-services
 /* 6. Section-projects
-/* 7. Vantagens
+/* 7. Section-team
 /* 8. Newsletter
 /* 9. Footer
 /**********************************/
@@ -149,11 +149,11 @@ header {
 
 .banner .slidearea {
   display: flex;
-  flex-direction: column;
   height: 100%;
-  justify-content: center;
   align-items: center;
   color: var(--clr-fff);
+  justify-content: center;
+  flex-direction: column;
 }
 
 .banner h1 {
@@ -289,6 +289,7 @@ header {
   text-align: center;
   border-right: 1px solid var(--clr-555);
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 .section-service:first-child {
@@ -398,4 +399,111 @@ header {
 
 .section-projects--photoarea:hover .section-projects--photoinfo {
   display: flex;
+}
+
+/**********************************/
+/* 7. Section-team
+/**********************************/
+
+.bg-team {
+  background-image: url("../image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-team-area {
+  background-color: var(--clr-transp-000);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-team {
+  overflow: hidden;
+  max-width: 880px;
+  margin: auto;
+}
+
+.section-team .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.section-team .slide {
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  display: inline-block;
+  background-color: var(--clr-fff);
+  margin-right: 20px;
+}
+
+.section-team .slidearea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-000);
+  padding: 30px;
+}
+
+.section-team-area .sliders-pointers {
+  margin-top: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-team-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--clr-b28756);
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+  background-color: var(--clr-b28756);
+}
+
+.section-team--avatar {
+  width: 150px;
+  height: auto;
+}
+
+.section-team--name {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.section-team--role {
+  font-size: 14px;
+  color: var(--clr-999);
+  margin-top: 5px;
+}
+
+.section-team--social {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section-team--social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-ccc);
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.section-team--social a:hover {
+  background-color: var(--clr-b28756);
 }
